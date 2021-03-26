@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/87e36a3e62.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body class="overflow-x-hidden dark:bg-indigo-600" id="home">
+    
+    <div class="navbar flex lg:px-10 lg:py-8 fixed bg-white dark:bg-indigo-700 min-w-full top-0 px-4 py-6 z-10 lg:z-0">
+        <div class="brand flex px-2 lg:px-10">
+            <span><i class="fas fa-dna text-lg lg:text-4xl text-indigo-500"></i></span>
+            <h1 class="ml-2 lg:ml-4 text-lg lg:text-3xl font-bold text-indigo-700">Drax</h1>
+        </div>
+        
+        <div data-target="#link" id="toggler" class="ml-auto mr-6 lg:hidden">
+            <span><i class="fas fa-bars text-2xl text-indigo-600"></i></span>
+        </div>
+        <div id="link" class="links bg-white min-w-full lg:min-w-0 hidden lg:flex absolute lg:relative block mt-16 lg:max-h-10 lg:-mb-20 lg:ml-auto">
+            <a href="#home" class="block rounded-2xl px-2 py-2 mt-4 lg:-mt-16 text-sm lg:text-base lg:max-h-11 text-indigo-500 font-semibold lg:px-6 hover:bg-indigo-100">Home</a>
+            <a href="#about" class="block rounded-2xl px-2 py-2 mt-4 lg:-mt-16 text-sm lg:text-base lg:max-h-11 text-indigo-500 font-semibold lg:px-6 hover:bg-indigo-100">About</a>
+            <a href="#feature" class="block rounded-2xl px-2 py-2 mt-4 lg:-mt-16 text-sm lg:text-base lg:max-h-11 text-indigo-500 font-semibold lg:px-6 hover:bg-indigo-100">Feature</a>
+            <a href="#contact" class="block rounded-2xl px-2 py-2 mt-4 lg:-mt-16 lg:mr-20 text-sm lg:text-base lg:max-h-11 text-indigo-500 font-semibold lg:px-6 hover:bg-indigo-100">Contact</a>
+            <div class="toggle py-4" id="dark-btn">
+                <button class="text-sm w-full lg:flex lg:text-base lg:-mt-20 text-indigo-600 font-semibold bg-indigo-100 rounded-2xl px-2 lg:px-4 py-2 hover:text-indigo-100 hover:bg-indigo-600 duration-300">Drax Mode</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container lg:flex">
+        <img src="dist/img/1.svg" class="flex w-52 lg:w-96 mx-auto lg:m-20 lg:mt-44 mt-24 ">
+        <div class="block">
+            <h1 class="mt-8 lg:mt-64 text-3xl lg:text-5xl font-semibold text-center lg:text-left">Discover The World with <span class="font-bold text-indigo-600">Drax</span></h1>
+            <p class=" text-xs lg:text-sm mt-2 lg:mt-8 text-center lg:text-left text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, alias. Possimus consequuntur distinctio amet aliquid quis? Odio repudiandae temporibus dolor nisi numquam eum libero sunt! <span class="hidden lg:block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, officia possimus aliquid ducimus ex quasi, deserunt, doloremque distinctio impedit expedita asperiores laborum fuga eius eveniet.</span> </p>
+        </div>
+    </div>
+
+    <div class="about mt-20 lg:mt-44" id="about">
+        <h1 class="font-bold text-center lg:text-3xl">About Us</h1>
+        <p class="text-xs lg:text-base mt-2 text-center text-gray-500 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deleniti ad, dolore quae suscipit blanditiis.</p>
+        <img src="dist/img/21.svg" class="w-36 lg:w-96 lg:mt-36 mx-auto mt-8" >
+    </div>
+
+    <div class="feature mt-20 lg:mt-72" id="feature">
+        <h1 class="font-bold text-xl lg:text-3xl text-center">Feature</h1>
+        <p class="text-xs lg:text-base mt-2 text-center text-gray-500 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deleniti ad, dolore quae suscipit blanditiis.</p>
+        
+        <div class="flex mt-10 lg:mt-32">
+            <img src="dist/img/22.svg" class="w-24 lg:w-72 ml-10 lg:ml-64 mt-8" >
+            <div class="block lg:ml-48 lg:mt-2">
+                <h3 class="font-bold mt-10 ml-4 text-purple-600 block lg:text-3xl">Helpful</h3>
+                <p class="text-xs lg:text-base lg:mt-4 text-gray-500 ml-4 lg:max-w-2xl">Lorem ipsum dolor Dolores nesciunt at numquam? Deserunt, fuga eveniet? Vitae?. <span class="hidden lg:block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias ipsa accusantium iste aspernatur! Ea nobis quasi illo distinctio, tenetur voluptates perspiciatis, beatae, sequi pariatur aut quibusdam totam facere ratione.</span></p>
+            </div>
+        </div>
+        <div class="flex mt-10 lg:mt-20">
+            <div class="block lg:mr-48 lg:mt-2">
+                <h3 class="font-bold mt-10 ml-4 lg:text-right text-purple-600 lg:text-3xl block">Scheudle</h3>
+                <p class="text-xs lg:text-base lg:text-right lg:mt-4 text-gray-500 ml-4">Lorem ipsum dolor Dolores nesciunt at numquam? Deserunt, fuga eveniet? Vitae?<span class="hidden lg:block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias ipsa accusantium iste aspernatur! Ea nobis quasi illo distinctio, tenetur voluptates perspiciatis, beatae, sequi pariatur aut quibusdam totam facere ratione.</span></p>
+            </div>
+            <img src="dist/img/23.svg" class="w-24 mr-4 mt-8 lg:w-72 lg:mr-64" >
+        </div>
+
+    </div>
+
+    <div class="contact lg:mt-64" id="contact">
+
+        <h1 class="font-bold text-xl lg:text-3xl mt-20 lg\:mt-48 text-center">Contact Us</h1>
+        <p class="text-xs lg:text-base text-center mt-2 text-gray-500 ml-4">Lorem ipsum dolor Dolores nesciunt at numquam? Deserunt, fuga eveniet? Vitae?</p>
+        
+        <div class="ml-3 mt-5 block">
+            <label class="text-gray-600 font-semibold text-sm text-purple-600">Email:</label>
+            <input type="text" class="border border-gray-200 mt-2 focus:outline-none focus:ring-2 lg:block lg:min-w-full lg:h-11 ">
+        </div>
+        <div class="ml-3 mt-5 block">
+            <label class="text-gray-600 font-semibold text-sm text-purple-600">Message:</label>
+            <input type="text" class="border border-gray-200 mt-2 h-40 focus:outline-none focus:ring-2 lg:block lg:w-96 lg:min-w-full lg:h-72">
+        </div>
+    </div>
+
+        
+    
+    <footer class="mt-20 bg-indigo-700 px-10 py-6 w-full absolute">
+        <p class="text-white"> 
+        created by <a class="bg-indigo-100 text-indigo-600 px-4 rounded" href="https://instagram.com/sandifauzan_/">sandifauzan</a>
+        </p>
+    </footer>
+
+    <script src="dist/app.js"></script>
+
+</body>
+</html>
